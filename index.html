@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<style>
+#div1 {
+  font-size:100px;
+  text-align: center;
+        margin:auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        height:40%;
+        width:50%;
+z-index:2
+}
+
+#div2 {
+  font-size:30px;
+  text-align: center;
+        margin:auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        height:0%;
+        width:50%;
+z-index:2
+}
+
+#div3 {
+    text-align: center;
+        margin:auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:-20%;
+        bottom: 0;
+        height:600px;
+        width:700px;
+        background-color: #ffffff;
+        opacity:0.8;
+        border-radius:10px;
+z-index:1;
+}
+
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body style="background: url(logo/background.jpg); background-size:cover;background-repeat: no-repeat;">
+
+<div id="div1" class="fa"></div>
+
+<script>
+function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf244;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf243;";
+    }, 500);
+  setTimeout(function () {
+      a.innerHTML = "&#xf242;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf241;";
+    }, 1500);
+  setTimeout(function () {
+      a.innerHTML = "&#xf240;";
+    }, 2000);
+}
+chargebattery();
+setInterval(chargebattery, 2500);
+</script>
+<div id="div2"">
+即将发射到 - 火星云<br><br>
+倒计时3s
+</div>
+
+<div id="div3"></div>
+　<meta http-equiv="refresh" content="2;url=http://huoxing1hao.icu">
+</body>
+</html>
